@@ -1,0 +1,94 @@
+.tariffs {
+  margin-top: 100px;
+}
+
+.tariffs__background {
+  background: url(../../images/background-seascape.jpeg) center no-repeat;
+  background-size: cover;
+  padding: 60px 0 80px;
+}
+
+.tariffs .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+  justify-content: center;
+  gap: 60px 30px;
+}
+
+.tariffs__card {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px 0px rgba(33, 75, 93, 0.2);
+  outline: 1px solid #fff;
+  background-color: rgba(255, 255, 255, .5);
+  backdrop-filter: blur(30px);
+  min-height: 450px;
+}
+
+.tariffs__card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 18px;
+  padding: 35px 0;
+  color: #fff;
+  border-radius: 20px 20px 0 0;
+}
+
+.tariffs__card:first-of-type .tariffs__card-header {
+  background: linear-gradient(90.00deg, rgb(255, 200, 4), rgb(255, 129, 250) 100%);
+}
+
+.tariffs__card:last-of-type .tariffs__card-header {
+  background: linear-gradient(90.00deg, rgb(106, 255, 68), rgb(113, 229, 255) 100%);
+}
+
+.tariffs__card-header p {
+  font-weight: 600;
+}
+
+.tariffs__card-price {
+  font-size: 42px;
+}
+
+.tariffs__card-description {
+  padding: 20px 20px 30px;
+}
+
+@media(max-width: 425px) {
+  .tariffs__card-price {
+    font-size: 24px;
+  }
+
+  .tariffs__card-description {
+    font-size: 14px;
+  }
+}
+
+.tariffs__card-description P:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+.tariffs__card-description li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.tariffs__card-description li::marker {
+  font-size: 10px;
+}
+
+.tariffs__link {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.tariffs__card:first-of-type .tariffs__link {
+  background: linear-gradient(90.00deg, rgb(255, 200, 4), rgb(255, 129, 250) 100%);
+}
+
+.tariffs__card:last-of-type .tariffs__link {
+  background: linear-gradient(90.00deg, rgb(106, 255, 68), rgb(113, 229, 255) 100%);
+}

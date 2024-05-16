@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(./vendor/normalize.css);
+@import url(./components/Header/Header.css);
+@import url(./components/HeaderBanner/HeaderBanner.css);
+@import url(./components/Navigation/Navigation.css);
+@import url(./components/MobileNavigation/MobileNavigation.css);
+@import url(./components/About/About.css);
+@import url(./components/Feedback/Feedback.css);
+@import url(./components/YoutubeChannel/YoutubeChannel.css);
+@import url(./components/Partners/Partners.css);
+@import url(./components/Statistics/Statistics.css);
+@import url(./components/Formats/Formats.css);
+@import url(./components/Tariffs/Tariffs.css);
+@import url(./components/Rules/Rules.css);
+@import url(./components/SpecialOffers/SpecialOffers.css);
+@import url(./components/Team/Team.css);
+@import url(./components/Footer/Footer.css);
+@import url(./components/ScrollUp/ScrollUp.css);
+
+:root {
+  --button-blue: #22a5dc;
+  --button-blue-hover: #226F8F;
+  --button-blue-active: #27BFFF;
+  --button-green: #31A576;
+  --button-green-hover: #014C08;
+  --button-green-active: #00F118;
+  --container-width: 1440px
+}
+
+.page {
+  font-family: Montserrat, Roboto, Inter, system-ui, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  min-width: 320px;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media(max-width: 600px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 50px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 212px;
+  width: 100%;
+  height: 59px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: lowercase;
+  transition: .3s;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3)
+}
+
+/* slick slider */
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-arrow-button {
+  position: absolute;
+  top: 50%;
+  background: url(./images/icons/arrow.svg) center no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.prev-arrow-button {
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.next-arrow-button {
+  transform: translateY(-50%) rotate(180deg);
+  right: 0;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  text-align: center;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #BDBDBD;
+}
+
+.slick-dots li button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  color: transparent;
+}
+
+.slick-dots li.slick-active {
+  background-color: #039BE5;
+}
