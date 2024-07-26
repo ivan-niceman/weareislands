@@ -1,0 +1,145 @@
+.footer {
+  margin-top: 100px;
+  background-color: #039BE5;
+  padding: 45px 0 20px;
+}
+
+.footer .container>div {
+  display: grid;
+  grid-template-columns: 156px 710px 290px;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media(max-width: 1250px) {
+  .footer .container>div {
+    grid-template-columns: 190px minmax(250px, 510px);
+    align-items: start;
+  }
+}
+@media(max-width: 650px) {
+  .footer .container>div {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+}
+
+.footer__logo {
+  margin: 0 auto;
+}
+
+.footer__logo>a {
+  background: url(../../images/logo-footer.svg) center no-repeat;
+  background-size: cover;
+  display: block;
+  width: 156px;
+  height: 78px;
+  margin: 0 auto;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin-top: 10px;
+}
+
+.footer__social a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.footer__social a:nth-child(1) {
+  background: url(../../images/icons/facebook.svg) center no-repeat;
+}
+.footer__social a:nth-child(2) {
+  background: url(../../images/icons/telegram.svg) center no-repeat;
+}
+.footer__social a:nth-child(3) {
+  background: url(../../images/icons/whatsapp.svg) center no-repeat;
+  background-color: #fff;
+}
+
+.footer__qrs {
+  display: grid;
+  grid-template-columns: minmax(80px, 140px) minmax(70px, 140px);
+  column-gap: 25px;
+}
+
+.footer__qrs img {
+  object-fit: contain;
+  width: 100%;
+}
+
+@media(max-width: 1250px) {
+  .footer__qrs {
+    margin-top: 20px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
+@media(max-width: 650px) {
+  .footer__qrs {
+    grid-row: 3 / 4;
+    justify-content: space-between;
+  }
+  .footer__qrs img {
+    height: 150px;
+  }
+}
+
+.footer__qrs a {
+  display: block;
+  font-size: 10px;
+font-weight: 600;
+text-align: center;
+text-decoration-line: underline;
+text-transform: lowercase;
+color: #fff;
+}
+
+.footer__alert {
+  font-weight: 500;
+  color: #fff;
+  margin: 50px 0;
+}
+
+@media(max-width: 425px) {
+  .footer__alert {
+    font-size: 14px;
+  }
+}
+
+.nice-dev {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  width: fit-content;
+  transition: .3s;
+  animation: color 3s infinite;
+}
+
+@keyframes color {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 0 #000;
+  }
+  50% {
+    color: var(--button-green-active);
+    text-shadow: 0 0 0 #000;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 0 0 0 #000;
+  }
+}
+
+.nice-dev:hover {
+  animation: none;
+}

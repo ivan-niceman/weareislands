@@ -1,0 +1,136 @@
+.team {
+  margin-top: 100px;
+}
+
+.team__subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.team__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+@media(max-width: 1199px) {
+  .team__cards {
+    display: none;
+  }
+}
+
+.team__card,
+.team__card-slider-card {
+  display: grid;
+  grid-template-columns: 215px 1fr;
+  gap: 30px;
+  box-shadow: 0px 9px 9px 0px rgba(91, 83, 83, 0.25);
+  border-radius: 20px;
+}
+
+@media(max-width: 760px) {
+  .team__card-slider-card {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+.team__card>div,
+.team__card-slider-card>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 30px 10px 0;
+}
+
+.team__card img,
+.team__card-slider-card img {
+  width: 215px;
+  height: 235px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media(max-width: 760px) {
+  .team__card-slider-card>div {
+    margin: 10px;
+  }
+  .team__card-slider-card img {
+    margin: 0 auto;
+  }
+}
+
+.team__description {
+  font-size: 14px;
+}
+
+.team__description b {
+  font-weight: 600;
+}
+
+.team__position {
+  font-size: 14px;
+  font-weight: 600
+}
+
+@media(max-width: 1199px) {
+  .team__position {
+    margin-top: 10px;
+  }
+}
+
+.team__cards-slider {
+  position: relative;
+  margin-top: 50px;
+}
+
+
+@media(min-width: 1199px) {
+  .team__cards-slider {
+    display: none;
+  }
+}
+
+.team__card-slider {
+  margin: 0 auto 20px;
+  max-width: 700px;
+  padding: 0 60px;
+}
+
+@media (max-width: 760px) {
+  .team__card-slider {
+    padding: 0 10px;
+  }
+  .team__cards-slider .slick-arrow-button {
+    top: 105%;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 760px) {
+  .team__cards-slider .next-arrow-button {
+    right: 35%;
+  }
+  .team__cards-slider .prev-arrow-button {
+    left: 35%;
+  }
+}
+
+.team__mail-link {
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+@media (max-width: 760px) {
+  .team__mail-link {
+    margin-top: 100px;
+  }
+}
+
+.team__mail-link a {
+  color: #000;
+  font-weight: 500;
+}
